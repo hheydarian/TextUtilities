@@ -1,9 +1,68 @@
-bin/
-obj/
-*.user
+## Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Bb]uild/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+
+## VS
+.vs/
 *.suo
-*.vsp
-*.vspx
+*.user
 *.userosscache
 *.sln.docstates
-.vs/
+
+## Rider
+.idea/
+*.sln.iml
+
+## Backup & temp
+~$*
+*.tmp
+*.bak
+
+## Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+
+## StyleCop
+StyleCopReport.xml
+
+## NuGet
+*.nupkg
+*.snupkg
+# The packages folder can be ignored because of PackageReference
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+## Others
+*.dbmdl
+*.psess
+*.vsp
+*.vspscc
+*.vssscc
+*.cache
+*.ilk
+*.obj
+*.pch
+*.pdb
+*.ipch
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
