@@ -6,8 +6,6 @@
 A simple yet useful .NET library for common text operations.  
 Created as a learning project and published as a reusable utility package.
 
-![preview](https://raw.githubusercontent.com/hheydarian/TextUtilities/master/assets/images/preview.jpg)
-
 ---
 
 ## ✨ Features
