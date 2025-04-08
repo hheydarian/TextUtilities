@@ -36,7 +36,9 @@ dotnet add package TextUtilities
 You can install the package via **NuGet**:
 
 ### 🔸 Using Package Manager:
+```
 Install-Package TextUtilities
+```
 ```powershell
 
 using System;
@@ -62,7 +64,7 @@ class Program
 ```
 
 ## 🛠 Target Framework
-.NET 9
+**.NET 9**
 
 ## 📦 NuGet Package
 🔗 https://www.nuget.org/packages/TextUtilities/
