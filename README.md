@@ -2,6 +2,8 @@
 
 ![NuGet](https://img.shields.io/nuget/v/TextUtilities)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![NuGet Downloads](https://img.shields.io/nuget/dt/TextUtilities.svg)
+![.NET Version](https://img.shields.io/badge/.NET-9-purple.svg)
 
 A simple yet useful .NET library for common text operations.  
 Created as a learning project and published as a reusable utility package.
