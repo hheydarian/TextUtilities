@@ -8,6 +8,7 @@
 A simple yet useful .NET library for common text operations.  
 Created as a learning project and published as a reusable utility package.
 
+## ⛔ It is being updated ⛔
 ---
 
 ## ✨ Features
