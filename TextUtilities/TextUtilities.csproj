@@ -6,12 +6,36 @@
     <Nullable>enable</Nullable>
     <PackageId>TextUtilities</PackageId>
     <Title>TextUtilities</Title>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Hamed Heydarian</Authors>
     <Company>dotnetcodeir</Company>
-    <Description>A simple library for text processing, including removing extra spaces, converting to TitleCase, and checking if a string is numeric.</Description>
-    <PackageIcon>TextUtilities.jpg</PackageIcon>
-    <PackageTags>TextUtilities,Text,TextHelper.Convert,Persian</PackageTags>
+    <Description>A fluent library for advanced text manipulation, including removing spaces, normalizing Persian text, creating URL slugs, and more.</Description>
+    <PackageIcon>edit.png</PackageIcon>
+    <PackageTags>TextUtilities,Text,TextProcessing,FluentAPI,Slug,Formatting</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/hheydarian/TextUtilities</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <NeutralLanguage>en-001</NeutralLanguage>
+    <FileVersion>1.0.1</FileVersion>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <PackageProjectUrl>https://github.com/hheydarian/TextUtilities</PackageProjectUrl>
+    <Product>TextUtilities</Product>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="edit.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
