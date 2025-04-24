@@ -5,75 +5,77 @@
 ![NuGet Downloads](https://img.shields.io/nuget/dt/TextUtilities.svg)
 ![.NET Version](https://img.shields.io/badge/.NET-9-purple.svg)
 
-A simple yet useful .NET library for common text operations.  
-Created as a learning project and published as a reusable utility package.
+# TextUtilities 📝
 
-## ⛔ It is being updated ⛔
+
+
+**TextUtilities** is a **fluent**, **lightweight**, and **powerful** .NET library designed for advanced text manipulation. Whether you're normalizing Persian text, creating URL-friendly slugs, formatting text with HTML or Markdown, or performing complex string operations, TextUtilities offers an intuitive Fluent API to make your code clean and efficient.
+
 ---
 
 ## ✨ Features
 
-**TextUtilities** currently includes the following string-related methods:
-
-- **`NormalizeSpaces(string input)`**  
-  Removes extra spaces from a text and replaces them with single spaces.  
-  _Example:_ `" This   is   a   test "` → `"This is a test"`
-
-- **`ToTitleCase(string input)`**  
-  Converts the first letter of each word to uppercase.  
-  _Example:_ `"hello world"` → `"Hello World"`
-
-- **`IsNumeric(string input)`**  
-  Checks whether a string contains only numeric characters.  
-  _Example:_ `"123"` → `true` | `"abc123"` → `false`
+- **Fluent API**: Chain methods for readable and maintainable code.
+- **Multilingual Support**: Normalize Persian/Arabic characters (e.g., converting `ي` to `ی` or `ك` to `ک`).
+- **Text Formatting**: Add HTML/Markdown bold tags, prefixes, or perform regex-based replacements.
+- **Advanced Text Operations**: Create URL slugs, reverse text or words, count words, and more.
+- **Lightweight**: Minimal dependencies, optimized for performance.
+- **Reliable**: Fully tested with xUnit to ensure quality and stability.
+- **Cross-Platform**: Built for .NET 9.0, compatible with modern .NET applications.
 
 ---
-## 🔸Using .NET CLI:
-```
-dotnet add package TextUtilities
-```
-## ⚙️ Installation
 
-You can install the package via **NuGet**:
+## 📦 Installation
 
-### 🔸 Using Package Manager:
-```
-Install-Package TextUtilities
-```
-```powershell
+To use TextUtilities in your project, install it via NuGet:
 
-using System;
+```bash
+dotnet add package TextUtilities --version 1.0.1
+```
+Or, if you prefer using the Package Manager Console:
+```
+Install-Package TextUtilities -Version 1.0.1
+```
+
+## 🚀Quick Start
+Get started with TextUtilities in just a few lines of code:
+```
 using TextUtilities;
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("=== NormalizeSpaces ===");
-        string messy = " This   is   a   test ";
-        Console.WriteLine(TextHelper.NormalizeSpaces(messy)); // Output: This is a test
+string result = new TextUtility("Hello World!")
+    .RemoveSpaces()
+    .ToBold()
+    .AddPrefix("Output: ")
+    .Build();
 
-        Console.WriteLine("\n=== ToTitleCase ===");
-        string text = "salam hamed";
-        Console.WriteLine(TextHelper.ToTitleCase(text)); // Output: Salam Hamed
+Console.WriteLine(result);
+// Output: Output: <b>HelloWorld!</b>
+```
+## 🛠️Usage Examples
+Below are some practical examples to demonstrate the power of TextUtilities:
+1. Normalizing Persian Text
+```
+using TextUtilities;
 
-        Console.WriteLine("\n=== IsNumeric ===");
-        Console.WriteLine(TextHelper.IsNumeric("123"));     // Output: True
-        Console.WriteLine(TextHelper.IsNumeric("hamed"));   // Output: False
-    }
-}
+string result = new TextUtility("hello world")
+    .NormalizePersian()
+    .ToUpperCase()
+    .Build();
+
+Console.WriteLine(result);
+```
+2. Creating a URL-Friendly Slug
+```
+using TextUtilities;
+
+string result = new TextUtility("Hello World! @#$")
+    .ToSlug()
+    .Build();
+
+Console.WriteLine(result);
+// Output: hello-world
+```
+3. Chaining Multiple Operations
 ```
 
-## 🛠 Target Framework
-**.NET 9**
-
-## 📦 NuGet Package
-🔗 https://www.nuget.org/packages/TextUtilities/
-
-## 📄 License
-This project is licensed under the MIT License — free for personal and commercial use.
-See the LICENSE file for more details.
-
-## 👤 Author
-Created with ❤️ by Hamed Heydarian
-GitHub: https://github.com/hheydarian
+```
