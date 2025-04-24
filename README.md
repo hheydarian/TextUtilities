@@ -188,11 +188,3 @@ For questions or feedback, feel free to open an issue or reach out!
 
 ## ⭐Enjoying TextUtilities? Give it a star on [GitHub](https://github.com/hheydarian/TextUtilities "GitHub")!⭐
 Thank you for using TextUtilities!🚀
-
-
-
-
-
-
-
-

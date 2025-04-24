@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <PackageId>TextUtilities</PackageId>
     <Title>TextUtilities</Title>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Hamed Heydarian</Authors>
     <Company>dotnetcodeir</Company>
     <Description>A fluent library for advanced text manipulation, including removing spaces, normalizing Persian text, creating URL slugs, and more.</Description>
@@ -16,8 +16,8 @@
     <RepositoryUrl>https://github.com/hheydarian/TextUtilities</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en-001</NeutralLanguage>
-    <FileVersion>1.0.1</FileVersion>
-    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.2</FileVersion>
+    <AssemblyVersion>1.0.2</AssemblyVersion>
     <PackageProjectUrl>https://github.com/hheydarian/TextUtilities</PackageProjectUrl>
     <Product>TextUtilities</Product>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
