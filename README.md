@@ -1,11 +1,12 @@
-# TextUtilities
+# 📝TextUtilities 
+
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![NuGet](https://img.shields.io/nuget/v/TextUtilities)
 ![NuGet Downloads](https://img.shields.io/nuget/dt/TextUtilities.svg)
 ![.NET Version](https://img.shields.io/badge/.NET-9-purple.svg)
 
-# TextUtilities 📝
+
 
 
 
