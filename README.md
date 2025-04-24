@@ -138,4 +138,40 @@ TextUtilities is thoroughly tested using xUnit to ensure reliability. To run the
 ```bash
 git clone https://github.com/hheydarian/TextUtilities.git
 ```
++ Navigate to the project directory:
+```bash
+cd TextUtilities
+```
++ Run the tests:
+```bash
+dotnet test
+```
+All 9+ unit tests should pass, covering key functionality.
+---
+## 🤝Contributing
+
+We welcome contributions to make TextUtilities even better! To contribute:
+
++ Fork the repository.
+
++ Create a new branch:
+```bash
+git checkout -b feature/YourFeature
+```
++ Make your changes and commit:
+```bash
+git commit -m 'Add some feature'
+```
++ Push to your branch:
+```bash
+git push origin feature/YourFeature
+```
++ Open a Pull Request on GitHub.
+
+Please ensure your code follows the existing style, includes unit tests, and passes all checks.
+
+
+
+
+
 
