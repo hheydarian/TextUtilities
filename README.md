@@ -7,9 +7,6 @@
 ![.NET Version](https://img.shields.io/badge/.NET-9-purple.svg)
 
 
-
-
-
 **TextUtilities** is a **fluent**, **lightweight**, and **powerful** .NET library designed for advanced text manipulation. Whether you're normalizing Persian text, creating URL-friendly slugs, formatting text with HTML or Markdown, or performing complex string operations, TextUtilities offers an intuitive Fluent API to make your code clean and efficient.
 
 ---
