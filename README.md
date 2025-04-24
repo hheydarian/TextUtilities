@@ -39,7 +39,7 @@ Install-Package TextUtilities -Version 1.0.1
 
 ## 🚀Quick Start
 Get started with TextUtilities in just a few lines of code:
-```
+```c#
 using TextUtilities;
 
 string result = new TextUtility("Hello World!")
@@ -54,7 +54,7 @@ Console.WriteLine(result);
 ## 🛠️Usage Examples
 Below are some practical examples to demonstrate the power of TextUtilities:
 1. Normalizing Persian Text
-```
+```c#
 using TextUtilities;
 
 string result = new TextUtility("hello world")
@@ -65,7 +65,7 @@ string result = new TextUtility("hello world")
 Console.WriteLine(result);
 ```
 2. Creating a URL-Friendly Slug
-```
+```c#
 using TextUtilities;
 
 string result = new TextUtility("Hello World! @#$")
@@ -76,6 +76,66 @@ Console.WriteLine(result);
 // Output: hello-world
 ```
 3. Chaining Multiple Operations
+```c#
+using TextUtilities;
+
+string result = new TextUtility("This is a TEST string!")
+    .ToLowerCase()
+    .RemoveSpaces()
+    .ToMarkdownBold()
+    .ToSlug()
+    .AddPrefix("Slug: ")
+    .Build();
+
+Console.WriteLine(result);
+// Output: Slug: **thisisateststring**
+```
+4. Reversing Words and Counting
+```c#
+using TextUtilities;
+
+string text = "Hello Beautiful World";
+var utility = new TextUtility(text);
+
+string reversed = utility.ReverseWords().Build();
+int wordCount = utility.WordCount();
+
+Console.WriteLine($"Reversed: {reversed}");
+Console.WriteLine($"Word Count: {wordCount}");
+// Output:
+// Reversed: World Beautiful Hello
+// Word Count: 3
+```
+5. Resetting Text
+```c#
+using TextUtilities;
+
+var utility = new TextUtility("Hello World");
+string modified = utility.ToSlug().Build(); // hello-world
+string reset = utility.Reset().ToBold().Build(); // <b>Hello World</b>
+
+Console.WriteLine($"Modified: {modified}");
+Console.WriteLine($"Reset: {reset}");
+// Output:
+// Modified: hello-world
+// Reset: <b>Hello World</b>
+```
+6. Regex Replacement
+```c#
+using TextUtilities;
+
+string result = new TextUtility("Hello123World456")
+    .ReplaceRegex("[0-9]+", "X")
+    .Build();
+
+Console.WriteLine(result);
+// Output: HelloXWorldX
+```
+## 🧪Testing
+
+TextUtilities is thoroughly tested using xUnit to ensure reliability. To run the tests locally:
++ Clone the repository:
+```bash
+git clone https://github.com/hheydarian/TextUtilities.git
 ```
 
-```
