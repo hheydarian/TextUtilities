@@ -170,6 +170,29 @@ git push origin feature/YourFeature
 
 Please ensure your code follows the existing style, includes unit tests, and passes all checks.
 
+## 📄License
+
+This project is licensed under the MIT License (LICENSE). See the LICENSE file for details.
+
+## 📭Contact & Support
+
++ Author: Hamed Heydarian
+
++ GitHub: [hheydarian](https://github.com/hheydarian "hheydarian")
+
++ NuGet: [TextUtilities](https://www.nuget.org/packages/TextUtilities/ "TextUtilities")
+
++ Issues: Report bugs or suggest features on GitHub Issues
+
+For questions or feedback, feel free to open an issue or reach out!
+
+---
+
+## ⭐Enjoying TextUtilities? Give it a star on [GitHub](https://github.com/hheydarian/TextUtilities "GitHub")!⭐
+Thank you for using TextUtilities!🚀
+
+
+
 
 
 
